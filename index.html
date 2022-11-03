@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Acesso sua conta! </title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+
+        <div class="container" id="login">
+            <div class="header">
+                <h2>Login</h2>
+                <span> Acesse sua conta pessoal agora mesmo! </span>
+            </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="exemplo@gmail.com" id="login_email"  required />
+                </div>
+                <div class="form-control">
+                    <label>Senha</label>
+                    <input type="password" id="login_pass"  required />
+                </div>
+                <button type="button" OnClick='executarUsuario("login")'>Login</button> <br />
+                
+            </form>
+            <span class="spnlogin"> Não se cadastrou ainda? <a href="javascript:clickBtn('cadastro')"> Crie sua conta agora mesmo! </a> </span>
+        </div>
+
+
+        <div class="container" id="cadastro" style="display: none;">
+            <div class="header">
+                <h2>Cadastro</h2>
+                <span> Crie sua conta para participar da rede! </span>
+            </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Nome Completo" id="nome" required />
+                </div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="exemplo@gmail.com" id="email" required />
+                </div>
+                <div class="form-control">
+                    <label>Senha</label>
+                    <input type="password" id="pass" minlength="6" required />
+                </div>
+                <div class="form-control">
+                    <label>Confirmar senha</label>
+                    <input type="password" id="cpass" minlength="6" required />
+                </div>
+                <button type="button" onclick='executarUsuario("cadastro")'>Cadastrar</button> <br />
+                
+            </form>
+            <span class="spnlogin"> Já possui uma conta? <a href="javascript:clickBtn('login')"> Acesse agora mesmo! </a> </span>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
