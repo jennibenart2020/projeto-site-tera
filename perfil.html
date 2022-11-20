@@ -1,96 +1,161 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt_BR">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/app.css" />
-        <link rel="stylesheet" href="css/menu.css" />
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-        <title>Benart  Mídia</title>
+        <title> Benart  Mídia </title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="sidebar">
-            <div class="logo-details">
-                <i class='bx bxs-bug icon'></i>
-                <div class="logo_name"> Benart Mídia </div>
-                <i class='bx bx-menu' id="btn" ></i>
-            </div>
-            <ul class="nav-list">
-                <li>
-                    <a href="app.html">
-                    <i class='bx bx-grid-alt'></i>
-                        <span class="links_name"> Feed </span>
-                    </a>
-                    <span class="tooltip">Feed</span>
-                </li>
-                <li>
-                    <a href="perfil.html">
-                    <i class='bx bxs-user' ></i>
-                        <span class="links_name"> Perfil </span>
-                    </a>
-                    <span class="tooltip">Perfil</span>
-                </li>
-
-                <li>
-                    <a href="meus-amigos.html">
-                    <i class='bx bxs-group' ></i>
-                        <span class="links_name">Meus amigos </span>
-                    </a>
-                    <span class="tooltip">Meus amigos</span>
-                </li>
-
-                <li class="profile">
-                    <div class="profile-details">
-                        <img src="img/user.png" alt="profileImg">
-                        <div class="name_job">
-                            <div class="name"> Jessica Silva </div>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">Bernat Mídia </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuNav" aria-controls="MenuNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="MenuNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" tabindex="1" href="app.html">Home <span class="sr-only">(atual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" tabindex="2" href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" tabindex="3"  href="amigos.html">Meus amigos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid bernat_topo">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="h5"> Assuntos em alta
+                                </div>
+                        
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="h6 text-muted">#eleicoes2022</div>
+                                    <div class="h5">3434 assuntos </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="h6 text-muted">#postmalone</div>
+                                    <div class="h5">2323 assuntos</div>
+                                </li>
+              
+                            </ul>
                         </div>
                     </div>
-                    <i class='bx bx-log-out' id="log_out" ></i>
-                </li>
-            </ul>
-        </div>
-        <header>
-            <h1 class="titulo-principal">Benart Mídia</h1>
-        </header>
-        <main class="main">
-            <div class="formulario_perfil">
-                <div class="header">
-                    <h2>Perfil</h2>
-                    <span> Edite suas configurações por aqui!</span>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <div class="main-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-center text-center">
+                                                    <img src="img/avatar.png" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
+                                                    <div class="mt-3">
+                                                        <h4>John Doe</h4>
+                                                        <p class="text-secondary mb-1">Diretor de Tecnologia</p>
+                                                        <p class="text-muted font-size-sm">São Paulo - SP</p>
+                                                        <button class="btn btn-outline-primary">Fazer postagem</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row mb-3">
+                                                    <div class="col-sm-3">
+                                                        <h6 class="mb-0">Seu nome</h6>
+                                                    </div>
+                                                    <div class="col-sm-9 text-secondary">
+                                                        <input type="text" class="form-control" value="" tabindex="4">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-sm-3">
+                                                        <h6 class="mb-0">Email</h6>
+                                                    </div>
+                                                    <div class="col-sm-9 text-secondary">
+                                                        <input type="text" class="form-control" value=""  tabindex="5">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-sm-3">
+                                                        <h6 class="mb-0">WhatsApp</h6>
+                                                    </div>
+                                                    <div class="col-sm-9 text-secondary">
+                                                        <input type="text" class="form-control" value=""  tabindex="6">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-sm-3">
+                                                        <h6 class="mb-0">LinkedIn</h6>
+                                                    </div>
+                                                    <div class="col-sm-9 text-secondary">
+                                                        <input type="text" class="form-control" value=""  tabindex="7">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-3"></div>
+                                                    <div class="col-sm-9 text-secondary">
+                                                        <input type="button" class="btn btn-primary px-4" value="Editar"  tabindex="8">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="proximas">
+                                <div class="usuarios p-3">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-2">
+                                            <img src="img/avatar.png" alt="user" class="profile-photo-lg">
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <h5><a href="#" class="profile-link"> Jonathan Gabriel </a></h5>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <a href="ver-perfil.html" class="btn btn-primary pull-right">Ver perfil</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <form class="form" id="form">
-                    <div class="form-control">
-                        <label>Nome</label>
-                        <input type="text" placeholder="Nome Completo" id="nome" value="Jessica Silva" required />
-                    </div>
-                    <div class="form-control">
-                        <label>Email</label>
-                        <input type="email" value="admin@admin.com" readonly />
-                    </div>
-                    <div class="form-control">
-                        <label>Alterar senha</label>
-                        <input type="password" id="pass" required />
-                    </div>
-
-                    <button type="button" onclick=''>Alterar dados</button> <br />
-                    
-                </form>
             </div>
+
         </main>
+
         <footer>
-            <div id="chat_icon">
-                <i class='bx-lg bx bx-message-square-dots bx-tada bx-flip-horizontal' style="font-size: 60px;"></i>
-            </div>
 
-            <div id="chat">
-            </div>
-
-            <div class="footer">
-                <span> Bernat Mídia &copy; 2022 </span>
-            </div>
         </footer>
-        <script src="js/app.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
