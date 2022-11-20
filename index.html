@@ -1,62 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt_BR">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Acesso sua conta! </title>
-        <link rel="stylesheet" href="css/index.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title> Bem vindo! </title>
     </head>
     <body>
+        <section class="vh-100">
+            <div class="container py-5 h-100">
+                <div class="row d-flex align-items-center justify-content-center h-100">
+                    <div class="col-md-8 col-lg-7 col-xl-6">
+                        <img src="img/login.png"
+                            class="img-fluid" alt="Imagem Login">
+                    </div>
+                    <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                        <form id="llogin">
+                            <div class="form-outline mb-4">
+                                <input type="email" id="login_email" class="form-control form-control-lg" />
+                                <label class="form-label" for="login_email">Email </label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="login_senha" class="form-control form-control-lg" />
+                                <label class="form-label" for="login_senha">Senha</label>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="lembrarLogin" checked />
+                                    <label class="form-check-label" for="lembrarLogin"> Lembrar login </label>
+                                </div>
+                                <a href="#!">Esqueceu a senha?</a> 
+                                
+                            </div>
+                            <button type="button" OnClick='executarUsuario("login")' class="btn btn-dark btn-lg btn-block">Acessar conta </button>
+                            <div style='text-align: center;margin-top: 10px;'>
+                                <a href="javascript:clickBtn('cadastro')">Não tem uma conta?</a>
+                            </div>
+                        </form>
 
-        <div class="container" id="login">
-            <div class="header">
-                <h2>Login</h2>
-                <span> Acesse sua conta pessoal agora mesmo! </span>
+                        <form id="cadastro" style="display: none;">
+                            <div class="form-outline mb-4">
+                                <input type="text" id="nome" class="form-control form-control-lg" />
+                                <label class="form-label" for="nome">Nome Completo </label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="email" id="email" class="form-control form-control-lg" />
+                                <label class="form-label" for="email">Email </label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="tel" id="tel" class="form-control form-control-lg" />
+                                <label class="form-label" for="tel">WhatsApp </label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="senha" class="form-control form-control-lg" />
+                                <label class="form-label" for="senha">Senha</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="csenha" class="form-control form-control-lg" />
+                                <label class="form-label" for="csenha">Confirmar senha</label>
+                            </div>
+                            <button type="button" OnClick='executarUsuario("cadastro")' class="btn btn-dark btn-lg btn-block">Criar conta </button>
+                            <div style='text-align: center;margin-top: 10px;'>
+                                <a href="javascript:clickBtn('login')">Já tem uma conta?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <form class="form" id="form">
-                <div class="form-control">
-                    <label>Email</label>
-                    <input type="email" placeholder="exemplo@gmail.com" id="login_email"  required />
-                </div>
-                <div class="form-control">
-                    <label>Senha</label>
-                    <input type="password" id="login_pass"  required />
-                </div>
-                <button type="button" OnClick='executarUsuario("login")'>Login</button> <br />
-                
-            </form>
-            <span class="spnlogin"> Não se cadastrou ainda? <a href="javascript:clickBtn('cadastro')"> Crie sua conta agora mesmo! </a> </span>
-        </div>
-
-
-        <div class="container" id="cadastro" style="display: none;">
-            <div class="header">
-                <h2>Cadastro</h2>
-                <span> Crie sua conta para participar da rede! </span>
-            </div>
-            <form class="form" id="form">
-                <div class="form-control">
-                    <label>Nome</label>
-                    <input type="text" placeholder="Nome Completo" id="nome" required />
-                </div>
-                <div class="form-control">
-                    <label>Email</label>
-                    <input type="email" placeholder="exemplo@gmail.com" id="email" required />
-                </div>
-                <div class="form-control">
-                    <label>Senha</label>
-                    <input type="password" id="pass" minlength="6" required />
-                </div>
-                <div class="form-control">
-                    <label>Confirmar senha</label>
-                    <input type="password" id="cpass" minlength="6" required />
-                </div>
-                <button type="button" onclick='executarUsuario("cadastro")'>Cadastrar</button> <br />
-                
-            </form>
-            <span class="spnlogin"> Já possui uma conta? <a href="javascript:clickBtn('login')"> Acesse agora mesmo! </a> </span>
-        </div>
+        </section>
         <script src="js/index.js"></script>
     </body>
 </html>
