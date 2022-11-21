@@ -1,394 +1,125 @@
-*{
-    margin:0;
-    padding:0;
-  
-    box-sizing:border-box;
-  }
-  
-  body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,1,48,1) 0%, rgba(6,191,255,1) 0%, rgba(36,75,228,1) 100%, rgba(0,212,255,1) 100%);
-    font-family:'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased !important;
-
-  }
-  h1 {
-    text-align: center;
-    font-style: comic;
-    font-weight: bold;
-    color: #FFF;
-
-  }
-  li{
-    list-style:none;
-  }
-  
-  header{
-    width: 100%;
-    height: 80px;
-    background-color: #11101D;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    box-shadow: 1px 0 3px white (0,0,0,0.4);
-  }
-  
-  .main{
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  div.newPost{
-    width:100%;
-    height: 240px;
-  
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 50px 0;
-    padding:25px;
-  
-    background:#fff;
-    border-radius: 10px;
-    box-shadow: 1px 2px 2px #5ca0d7 (0,0,0,0.05);
-  }
-  
-  div.newPost div.infoUser{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  div.newPost div.infoUser div.imgUser{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: gray;
-  }
-  
-  div.newPost div.infoUser strong{
-    font-size: 16px;
-    color: #5ca0d7;
-    margin-left: 10px;
-  }
-  
-  div.newPost form.formPost{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  div.newPost form.formPost textarea{
-    background: #fbfbfb;
-    margin:15px 0;
-    padding: 25px;
-    border-radius: 10px;
-    resize: none;
-    border: 0;
-    height: 90px;
-    outline: none;
-  
-    font-weight: bold;
-    color:#727272;
-    font-family: 'Roboto', sans-serif;
-    border:2px solid #fff;
-  }
-  div.newPost form.formPost textarea:focus{
-    border:2px solid #5ca0d7;
-  
-  }
-  div.newPost form.formPost div.iconsAndButton{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  div.newPost form.formPost div.iconsAndButton div.icons{
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  div.newPost form.formPost div.iconsAndButton div.icons button{
-    outline: none;
-    margin-right: 15px;
-    border:0;
-    background: #fff;
-    cursor: pointer;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  div.newPost form.formPost div.iconsAndButton button.btnSubmitForm{
-    background: #5ca0d7;
-    padding: 10px 50px;
-    color:#fff;
-    font-weight: bold;
-    cursor: pointer;
-  
-    border: 0;
-    border-radius: 10px;
-    transition: 0.2s;
-    background: #5ca0d7;
-  }
-
-.divPosts {
-    width: 100%;
-    height: auto;
-    background: #FFF;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    margin-bottom: 80px;
+body{
+  background:#FAFAFA;    
 }
 
-.post_name {
-  padding: 20px;
+.h7 {
+    font-size: 0.8rem;
 }
 
-.post_name img {
-  float: left;
-  
-}
-.post_name span {
-  float: left;
-  font-size: 16px;
-  color: #5ca0d7;
-  margin-left: 10px;
-  margin-top: 10px;
+.bernat_topo {
+    margin-top: 0.97rem;
 }
 
-.post_img img {
-  max-width: 100%;
-  height: auto;
+@media (min-width: 992px) {
+    .bernat_main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
 
-.post_img {
-  padding: 3%;
+.navbar {
+  background-color: #e5e4e4;
 }
 
-.post_content p {
-  padding: 3%;
-  text-align: justify;
+.proximas .usuarios {
+  padding: 20px 0;
+  border-top: 1px solid #f1f2f2;
+  border-bottom: 1px solid #f1f2f2;
+  margin-bottom: 20px;
 }
 
-.post_details {
-  padding-left: 3%;
-}
-
-.post_details span {
-  color: #5ca0d7;
+img.profile-photo-lg{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
 
 
-#chat_icon {
-  position: fixed;
-  bottom: 50px;
-  right: 10px;
-}
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #000;
-  color: white;
-  text-align: center;
-}
-
-.lateral {
+.card {
   position: relative;
-  float: right;
-  width: 280px;
-  height: 90vh;
-  background: #FFF;
-  padding: 20px;
-  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid transparent;
+  border-radius: .25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
 }
-
-.lateral img {
-  width: 40px;
-  height: 40px;
-}
-
-.lateral li  {
-  margin-top: 5px;
-}
-
-.lateral li button {
-  padding: 5px;
-  border: 1px solid #FFF;
-  background-color: rgb(23, 81, 238);
-  color: #FFF;
-  float: right;
-}
-
-
-.alta {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.risco {
-  width: 100%;
-  height: 1px;
-  background-color: #111;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-
-.main_friends {
-  width: 100%;
-  height: 100vh;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,1,48,1) 0%, rgba(6,191,255,1) 0%, rgba(36,75,228,1) 100%, rgba(0,212,255,1) 100%);
- 
-}
-.friends {
-  padding-left: 10%;
-  padding-top: 1%;
-}
-
-.box_friends {
-  float: left;
-  margin-top: 30px;
-  margin-left: 30px;
-  padding: 40px;
-  width: 20%;
-  height: 30%;
-  /*background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,1,48,1) 0%, rgba(6,191,255,1) 0%, rgba(36,75,228,1) 100%, rgba(0,212,255,1) 100%);
- */ color: #111;
- background-color: #FFF;
-}
-
-.center_div {
-  text-align: center;
-}
-.box_friends img {
-  width: 50px;
-  height: 50px;
-}
-
-.box_friends span {
-  font-size: 12px;
-}
-
-.box_friends button {
-  padding: 10px;
-  margin-top: 30px;
-  background-color: #11101D;
-  color: #FFF;
+.me-2 {
+  margin-right: .5rem!important;
 }
 
 
 
-.formulario_perfil {
-  background-color: rgb(255, 255, 255);
-  border-radius: 1px;
-  width: 450px;
-  padding: 10px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  margin-top: 50px;
+
+
+
+
+
+
+
+
+
+.shadow {
+-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
+-moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
 }
 
-.header {
-  padding: 30px 40px;
+.rounded {
+-webkit-border-radius: 3px !important;
+-moz-border-radius: 3px !important;
+border-radius: 3px !important;
 }
 
-.header h2 {
-  font-weight: 600;
-  color: #727272;
-  font-size: 30px;
+.panel {
+border: none;
+position: relative;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
 }
 
-.form {
-  padding: 0 40px 30px;
+.btn{
+  border-radius:0px;    
 }
 
-.form-control {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
+.profile-cover {
+width: 100%;
+
 }
 
-.form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
-  color: #727272;
+.profile-cover .cover {
+position: relative;
+border: 10px solid #FFF;
+  background:#fff;
 }
 
-.form-control input {
-  border: 1px solid #FFF;
-  border-bottom: 1px solid #2381ec;
-  outline: 0;
-  display: block;
-  font-size: 14px;
-  width: 100%;
-  padding: 15px;
+.profile-cover .cover .inner-cover {
+overflow: hidden;
+height: auto;
 }
 
-.form-control.success input {
-  border: 3px solid #4ECA64;
+.profile-cover .cover .inner-cover .cover-menu-mobile {
+position: absolute;
+top: 10px;
+right: 10px;
 }
 
-.form-control.error input {
-  border: 3px solid #DB5A5A;
+.full-width {
+top: 0; 
+left: 0; 
+  
+/* Preserve aspet ratio */
+min-width: 100%;
+min-height: 100%;
 }
 
-.form-control.error i.img-error {
-  visibility: visible;
-}
 
-.form-control.success i.img-success {
-  visibility: visible;
-}
-
-.form-control.error small{
-  color: #DB5A5A;
-  visibility: visible;
-}
-
-.container .spnlogin {
-  font-size: 12px;
-  padding: 40px;
-}
-
-.form-control i {
-  position: absolute;
-  top: 45px;
-  right: 10px;
-  visibility: hidden;
-}
-
-.form-control small {
-  visibility: hidden;
-  position: absolute;
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-.form button {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,1,48,1) 0%, rgba(6,191,255,1) 0%, rgba(36,75,228,1) 100%, rgba(0,212,255,1) 100%);
-  border: 1px solid #FFF;
-  border-radius: 5px ;
-  color: #fff;
-  padding: 15px;
-  font-size: 15px;
-  font-weight: 600;
-  width: 100%;
-  margin-top: 5px;
-  cursor: pointer;
-}
-
-.form button:hover {
-  background-color: #5ca0d7;
-  transition: 0.3s;
-}

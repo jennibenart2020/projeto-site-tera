@@ -1,26 +1,3 @@
-let sidebar = document.querySelector(".sidebar");
-let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
-
-closeBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-    menuBtnChange();
-});
-
-searchBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-    menuBtnChange();
-});
-
-function menuBtnChange() {
-    if (sidebar.classList.contains("open")) {
-        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); 
-    } else {
-        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); 
-    }
-}
-
-
 //setInterval(checarPostagens, 500);
 //setInterval(getPostagens, 1000);
 
@@ -48,7 +25,7 @@ function addHTML(htmlStringList) {
         resultado.appendChild(div);
 
         // salvar no local storage
-        let postagens = "postagens_" + (i + 1);
+        let postagens = "postagens_" + 1;
         localStorage.setItem(postagens, htmlStringList);
 
     }
@@ -61,8 +38,34 @@ function efetuarPostagem() {
     let data = "2 dias atrás";
     let comentarios = 4343;
     let img = "img/golden.jpg";
-    addHTML("<div class='divPosts'> <div class='post_name'> <img src='img/user.png' width='32px' height='32px'> <span class='name_post'> " + nome + " </span></div><div class='post_img'> <img class='img_post' src='" + img + "' /></div><div class='post_details'><span class='post_date'> " + data + " </span> | <a href=''> " + comentarios + " comentários </a> </div><div class='post_content'>  <p> " + valor + "</p></div></div>");
+ 
+    let html = "<div class='card bernat_card'>\
+                    <div class='card-header'>\
+                        <div class='d-flex justify-content-between align-items-center'>\
+                            <div class='d-flex justify-content-between align-items-center'>\
+                                <div class='mr-2'>\
+                                    <img class='rounded-circle' width='45' src='img/avatar.png' alt=''>\
+                                </div>\
+                                <div class='ml-2'>\
+                                    <div class='h5 m-0'> "+nome+" </div>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class='card-body'>\
+                        <div class='text-muted h7 mb-2'> <i class='fa fa-clock-o'></i> "+data+"</div>\
+                        <a class='card-link' href='#'>\
+                        <img class='img-fluid' src='" + img + "' /></div>\
+                        </a>\
+                        <p class='card-text p-2'>"+valor+" </p>\
+                    </div>\
+                    <div class='card-footer'>\
+                        <a href='#' class='card-link'><i class='fa fa-gittip'></i> Curtir </a>\
+                        <a href='#' class='card-link'><i class='fa fa-mail-forward'></i> Compartilhar </a>\
+                    </div>\
+                </div>";
 
+    addHTML(html);
 
 }
 

@@ -5,7 +5,7 @@ function isEmail(email) {
 function executarUsuario(evento) {
     if(evento == "login") {
         let email = document.getElementById("login_email").value;
-        let pass  = document.getElementById("login_pass").value;
+        let pass  = document.getElementById("login_senha").value;
 
         
         if(email == "" || pass == "")  {
@@ -18,18 +18,21 @@ function executarUsuario(evento) {
             return false;
         }
 
-        if(email == "admin@admin.com" && pass == "123") {
+        if(localStorage.getItem("email") == email && localStorage.getItem("senha") == pass) {
             alert("Login autorizado!");
             window.location.href = "app.html";
             return false;
+        } else {
+            alert("Dados de login inválidos!");
         }
 
 
     } else if(evento == "cadastro") {
         let nome   = document.getElementById("nome").value;
         let email  = document.getElementById("email").value;
-        let pass   = document.getElementById("pass").value;
-        let cpass  = document.getElementById("cpass").value;
+        let tel  = document.getElementById("tel").value;
+        let pass   = document.getElementById("senha").value;
+        let cpass  = document.getElementById("csenha").value;
 
         if(email == "" || pass == "")  {
             alert("E-mail ou senha em branco!");
@@ -45,16 +48,23 @@ function executarUsuario(evento) {
             alert("A confirmação da senha está diferente!");
             return false;
         }
+
+        localStorage.setItem("nome", nome);
+        localStorage.setItem("email", email);
+        localStorage.setItem("tel", tel);
+        localStorage.setItem("senha", cpass);
+        alert("Conta criada com sucesso!");
+        location.reload();
     }
 }
 
 function clickBtn(evento) { 
     if(evento == "login") {
-        document.getElementById("login").style.display = "block";
+        document.getElementById("llogin").style.display = "block";
         document.getElementById("cadastro").style.display = "none";
         document.title = "Acesse sua conta!"
     } else if(evento == "cadastro") {
-        document.getElementById("login").style.display = "none";
+        document.getElementById("llogin").style.display = "none";
         document.getElementById("cadastro").style.display = "block";
         document.title = "Crie sua conta para participar da rede!";
     }
