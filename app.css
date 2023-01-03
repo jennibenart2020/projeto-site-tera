@@ -1,0 +1,125 @@
+body{
+  background:#FAFAFA;    
+}
+
+.h7 {
+    font-size: 0.8rem;
+}
+
+.bernat_topo {
+    margin-top: 0.97rem;
+}
+
+@media (min-width: 992px) {
+    .bernat_main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+.navbar {
+  background-color: #e5e4e4;
+}
+
+.proximas .usuarios {
+  padding: 20px 0;
+  border-top: 1px solid #f1f2f2;
+  border-bottom: 1px solid #f1f2f2;
+  margin-bottom: 20px;
+}
+
+img.profile-photo-lg{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid transparent;
+  border-radius: .25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+.me-2 {
+  margin-right: .5rem!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.shadow {
+-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
+-moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.rounded {
+-webkit-border-radius: 3px !important;
+-moz-border-radius: 3px !important;
+border-radius: 3px !important;
+}
+
+.panel {
+border: none;
+position: relative;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+
+.btn{
+  border-radius:0px;    
+}
+
+.profile-cover {
+width: 100%;
+
+}
+
+.profile-cover .cover {
+position: relative;
+border: 10px solid #FFF;
+  background:#fff;
+}
+
+.profile-cover .cover .inner-cover {
+overflow: hidden;
+height: auto;
+}
+
+.profile-cover .cover .inner-cover .cover-menu-mobile {
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+.full-width {
+top: 0; 
+left: 0; 
+  
+/* Preserve aspet ratio */
+min-width: 100%;
+min-height: 100%;
+}
+
+
